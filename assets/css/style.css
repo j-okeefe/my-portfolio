@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+	background-color: rgb(214, 214, 214);
+}
+
+/*Header/Navigation*/
+
+header {
+    padding: 20px;
+    color:  #0072b1;
+	border-bottom: 2px solid #0168a0;
+}
+
+header h1 {
+    font-size: 42px;
+    text-align: left;
+	display: inline-block;
+}
+
+nav {
+	text-align: center;
+	float: right;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+	color:  #0072b1;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 5px;
+	width: 120px;
+	height: 40px;
+	float: left;
+	transition: all 0.5s ease;
+	line-height: 42px;
+}
+
+nav a:hover {
+	background: #0072b1;
+	color: whitesmoke;
+	border-radius: 10px;
+}
+
+/*Self Image*/
+#bigPic {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 35%;
+}
+
+#bigPic img {
+	width: 600px;
+	height: 360px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #0072b1;
+}
+
+/*Content Section*/
+
+.content {
+	display: inline-block;
+	max-width: 100%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+article h2 {
+	font-size: 36px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+article p {
+	font-size: 25px;
+}
+
+.contentAboutMe,
+.contentMyWork,
+.contentContactMe {
+    padding: 50px;
+	margin: 0 auto;
+}
+
+.contentContactMe {
+	display: flex;
+	justify-content: space-evenly;
+}
+.contentContactMe a {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	font-size: 25px;
+	line-height: 45px;
+	background-color: #0072b1;
+	color: whitesmoke;
+	border-radius: 10px;
+}
+
+.contentMyWork {
+	flex: 1 0 100%;
+}
+
+.project {
+	position: relative;
+	text-align: center;
+	color: white;
+	flex: 0 0 33%;
+}
+
+.bottom-left {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	background-color: #0072b1;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#horiseon {
+	max-width: 60%;
+}
+
+#placeholder1,
+#placeholder2,
+#placeholder3, {
+	max-width: 40%;
+}
+
+/*Footer*/
+footer {
+	background-color: #0072b1;
+	height: 100px;
+	text-align: center;
+}
+
+footer a{
+	color: whitesmoke;
+	text-decoration: none;
+	padding-top: 50px;
+}

@@ -1,61 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James O'Keefe's Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
     <header>
-        <h1 id="headerTitle">James O'Keefe</h1>
-        <nav class="topnav">   
-            <ul>
-                <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#myWork">My Work</a></li>
-                <li><a href="#contactMe">Contact Me</a></li>
+      <h1 id="headerTitle">James O'Keefe</h1>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutMe">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#myWork">My Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactMe">Contact Me</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
     <figure id="bigPic">
-        <img src="assets/images/myPicture.jpg" alt="picture of me">
-    </figure>	
-    <main>
-        <section class="content">
-            <article class="contentAboutMe">
-                <h2 id="aboutMe">About Me</h2>
-                <p>My name is James O'Keefe and I am an aspiring web developer. Outisde of work I enjoy golfing, hiking, and spending time with my family and friends. My wife and I are expecting our first child in June 2021. </p>
-            </article>
-            <article class="contentMyWork">
-                <h2 id="myWork">My Work</h2>
-                <div class="project">
-                    <a href="https://j-okeefe.github.io/CodeRefactor-Horiseon"><img src="assets/images/computer1.jpg" id="horiseon"></a>
-                    <div class="bottom-left">Horiseon</div>
-                </div>
-                <div class="project">
-                    <a href="https://j-okeefe.github.io/CodeRefactor-Horiseon"><img src="assets/images/computer2.jpg" id="placeholder1"></a>
-                    <div class="bottom-left">Placeholder1</div>
-                </div>
-                <div class="project">
-                    <a href="https://j-okeefe.github.io/CodeRefactor-Horiseon"><img src="assets/images/computer3.jpg" id="placeholder2"></a>
-                    <div class="bottom-left">Placeholder2</div>
-                </div>
-                <div>
-                    <a href="https://j-okeefe.github.io/CodeRefactor-Horiseon"><img src="assets/images/computer4.jpg" id="placeholder3"></a>
-                    <div class="bottom-left">Placeholder3</div>
-                </div>
-            </article>
-            <article class="contentContactMe">
-                <h2 id="contactMe">Contact Me</h2>
-                <a href= "mailto:jbokeefe88@gmail.com">E-Mail</a>
-                <a href= "https://github.com/j-okeefe">GitHub</a>
-                <a href= "https://www.linkedin.com/in/james-o-keefe-86595739">LinkedIn</a>
-            </article>
-        </section>
+      <img src="assets/images/myPicture.jpg" alt="picture of me" />
+    </figure>
+    <main class = "container">
+      <div></div>
+      <!-- About Me Section -->
+      <section class="row contentAboutMe">
+        <h2 id="aboutMe">About Me</h2>
+        <p>
+          My name is James O'Keefe and I am a practicing web developer. Outisde
+          of work I enjoy golfing, hiking, and spending time with my family and
+          friends. Soon to be first-time father and I can't wait!
+        </p>
+      </section>
+      <!-- My Work Section -->
+      <section class="row contentMyWork">
+        <h2 id="myWork">My Work</h2>
+        <!-- Project 1 -->
+        <figure class="figure">
+          <a href="https://j-okeefe.github.io/CodeRefactor-Horiseon/" title="Horiseon"><img src="assets/images/horiseonss.png" class="figure-img img-fluid rounded" alt="Horiseon"></a>
+          <figcaption class="figure-caption">Code Refactor - Horiseon</figcaption>
+        </figure>
+        <!-- Project 2 -->
+        <figure class="figure">
+          <a href="" title=""><img src="assets/images/computer2.jpg" class="figure-img img-fluid rounded" alt="Horiseon"></a>
+          <figcaption class="figure-caption">Placeholder2</figcaption>
+        </figure>
+        <!-- Project 3 -->
+        <figure class="figure">
+          <a href="" title=""><img src="assets/images/computer3.jpg" class="figure-img img-fluid rounded" alt="Horiseon"></a>
+          <figcaption class="figure-caption">Placeholder3</figcaption>
+        </figure>
+        <!-- Project 4 -->
+        <figure class="figure">
+          <a href="" title=""><img src="assets/images/computer4.jpg" class="figure-img img-fluid rounded" alt="Horiseon"></a>
+          <figcaption class="figure-caption">Placeholder4</figcaption>
+        </figure>
+      </section>
+      <!-- Contact Me Section -->
+      <section class="row contentContactMe">
+        <h2 id="contactMe">Contact Me</h2>
+        <a href="mailto:jbokeefe88@gmail.com">E-Mail</a>
+        <a href="https://github.com/j-okeefe">GitHub</a>
+        <a href="https://www.linkedin.com/in/james-o-keefe-86595739">LinkedIn</a>
+        <div class = "attr">Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      </section>
     </main>
-</body>
-<footer>
+  </body>
+  <footer>
     <a href="#headerTitle">Back To Top</a>
-</footer>
+  </footer>
 </html>

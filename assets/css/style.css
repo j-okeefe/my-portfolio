@@ -12,8 +12,8 @@ body {
 
 header {
     padding: 20px;
-    color:  #0072b1;
-	border-bottom: 2px solid #0168a0;
+    color:  whitesmoke;
+	background-color: #0072b1;
 }
 
 header h1 {
@@ -25,10 +25,6 @@ header h1 {
 nav {
 	text-align: center;
 	float: right;
-}
-
-nav li {
-    display: inline-block;
 }
 
 nav a {
@@ -55,8 +51,8 @@ nav a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  	margin-left: auto;
-  	margin-right: auto;
+  	margin-left: 125px;
+  	margin-right: 85px;
 	width: 35%;
 }
 
@@ -90,23 +86,7 @@ article p {
 .contentAboutMe,
 .contentMyWork,
 .contentContactMe {
-    padding: 50px;
 	margin: 0 auto;
-}
-
-.contentContactMe {
-	display: flex;
-	justify-content: space-evenly;
-}
-.contentContactMe a {
-	padding-left: 20px;
-	padding-right: 20px;
-	text-decoration: none;
-	font-size: 25px;
-	line-height: 45px;
-	background-color: #0072b1;
-	color: whitesmoke;
-	border-radius: 10px;
 }
 
 .contentMyWork {
@@ -128,16 +108,6 @@ article p {
 	color: white;
 	padding-left: 20px;
 	padding-right: 20px;
-}
-
-#horiseon {
-	max-width: 60%;
-}
-
-#placeholder1,
-#placeholder2,
-#placeholder3, {
-	max-width: 40%;
 }
 
 /*Footer*/
